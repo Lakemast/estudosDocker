@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "Indie Flower";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/IndieFlower-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medieval Sharp";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/MedievalSharp-Regular.ttf") format("truetype");
+}
+
+:root {
+  --primary-color: rgba(255, 217, 0, 0.95);
+  --secondary-color: rgba(71, 212, 200, 0.95);
+  --out-color: #a0a0a0;
+  --background: rgba(0, 43, 78, 0.85);
+  --bold: rgba(0, 195, 255, 0.95);
+  --font: #fff;
+  --border: rgba(63, 63, 63, 0.5);
+  --captions: rgba(180, 180, 180, 0.61);
+  --author: rgba(255, 217, 0, 1);
+}
+
+html {
+  font-family: "Medieval Sharp";
+  font-size: 19px;
+  color: var(--font);
+  line-height: 1.5em;
+}
+
+body {
+  background: url("../img/lich-king-vs-fordring.png") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container {
+  max-width: 1100px;
+  background-color: var(--background);
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 50px;
+  border-radius: 45px;
+}
+
+.bold {
+  font-weight: bold;
+  color: var(--bold);
+}
+
+figcaption {
+  color: var(--captions);
+}
+
+h2,
+h3 {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+p {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 0px;
+}
+
+.main-paragraph {
+  font-style: italic;
+  text-align: center;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+a {
+  color: aquamarine;
+}
+
+/* Imagem em destaque */
+img {
+  max-width: 850px;
+  border-radius: 30px;
+  border: 10px solid var(--border);
+}
+
+.featured-image {
+  text-align: center;
+  border-radius: 45px;
+  margin: 20px auto;
+}
+
+#vertical-image{
+  height: 50%;
+}
+
+/* Biografia */
+.biography-container {
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+/* Citações */
+
+.quotes-container {
+  background: url("../img/arthas-kills-terenas.jpg") no-repeat center center
+    scroll;
+  background-position: 50% 0;
+  background-size: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.opacity-container{
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#second-quote {
+  background-image: url("../img/lich-king.jpg");
+}
+
+.quotes-container blockquote {
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0px;
+  margin: 15px;
+}
+
+.quotes-container p {
+  font-style: italic;
+  font-weight: 500;
+  margin: 25px;
+}
+
+.author {
+  color: var(--author);
+  font-weight: 500;
+  text-indent: 0px;
+  margin-left: 0px !important;
+}
+
+/*Curiosidades*/
+
+.interesting-facts-container {
+  padding: 25px 0;
+  margin: 25px 0;
+}
+
+.interesting-facts-container ul {
+  list-style: none;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.interesting-facts-container ul li::before {
+  content: "\2022";
+  color: var(--secondary-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.interesting-facts-container li {
+  height: 30px;
+}
